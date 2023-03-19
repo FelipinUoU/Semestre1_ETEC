@@ -1,2 +1,2 @@
-"Semestre1_ETEC" 
+# Semestre1_ETEC
 Aqui contem todas as minhas atividades feitas e entreges aos professores da ETEC Zona Leste
