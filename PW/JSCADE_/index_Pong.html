@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsCade: Jogue seus Clássicos</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="icon" href="Img/master-sword-small.webp">
+    <link rel="stylesheet" href="Styles/css/style_Pong.css">
+    <script>
+        window.addEventListener("keydown", function(e) {
+            if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+                e.preventDefault();
+            }
+        }, false);</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-lightgray">
+        <div class="container-fluid">
+          <a class="navbar-brand h1 mb-0" href="index.html"><img class="logo" src="Img/BumBum.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Games
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="index_Asteroids.html">Asteroids</a></li>
+                  <li><a class="dropdown-item" href="index_Pong.html">Pong</a></li>
+                  <li><a class="dropdown-item" href="index_Snake.html">Snake</a></li>
+                  <li><a class="dropdown-item" href="index_Tetris.html">Tetris</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main>
+        <div class="Pong">
+        <canvas>
+        <script src="games/Pong/pong.js"></script>
+        </canvas>
+    </div>
+    <div class="comandos">
+        <table>
+            <tr>
+
+                <th><img src="Img/arrowUp.png" height="28px"></th>
+                <th><img src="Img/arrowDown.png" height="28px"></th>
+                <td> Mover Base</td>
+            </tr>
+        </table>
+    </div>
+    </main>
+    <footer><div><p> Todos os direitos reservados©. Site criado por:<br>
+    Felipe Silva, Gabriel Rodrigues, João Paulo Marques, Geovanna Barretto.</p></div></footer>
+</body>
+</html>
